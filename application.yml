@@ -8,9 +8,13 @@ spring:
   profiles:
     application:
       name: dev-enviroment
+properties:
+  test: dev-properties
 
 ---
 spring:
   profiles:
     application:
       name: test-enviroment
+properties:
+  test: test-properties
