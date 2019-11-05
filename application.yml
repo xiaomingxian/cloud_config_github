@@ -4,17 +4,21 @@ spring:
     - dev
 
 ---
+server:
+  port: 1234
 spring:
-  profiles:
-    application:
+  profiles: dev
+  application:
       name: dev-enviroment
 properties:
   test: dev-properties
 
 ---
+server:
+  port: 5678
 spring:
-  profiles:
-    application:
+  profiles: test
+  application:
       name: test-enviroment
 properties:
   test: test-properties
